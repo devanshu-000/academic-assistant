@@ -1,0 +1,14 @@
+{
+  "name": "mern-items-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "server": "cd server && npm run dev",
+    "client": "npx http-server ./client -p 3000 -c-1",
+    "dev": "concurrently \"npm:server\" \"npm:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "http-server": "^14.1.1"
+  }
+}
